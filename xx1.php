@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function4.php";
 echo color("nevy"," ===================================\n");
 echo color("blue"," Auto create Gojek & Redeem voucher	\n");
-echo color("green"," Mr. T0B1N9\n");
+echo color("green"," Mr. GeMseN\n");
 echo color("blue"," Time    : ".date('[d-m-Y] [H:i:s]')."	\n");
 echo color("nevy"," ===================================\n");
 echo color("white","Token: ");
