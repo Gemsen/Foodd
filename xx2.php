@@ -18,7 +18,7 @@ echo "\n".color("white","Claim?: y/n ");
         echo color("white",".");
         sleep(1);
         }
-        $code1 = request5('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0508"}');
+        $code1 = request5('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAKANGOFOOD0508"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green"," Message: ".$message);
