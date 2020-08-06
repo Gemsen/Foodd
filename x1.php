@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function2.php";
+include "gemsen.php";
 echo color("nevy"," ===================================\n");
 echo color("blue"," Auto create Gojek & Redeem voucher	\n");
 echo color("green"," GeMseN Script Food\n");
@@ -18,7 +18,7 @@ echo "\n".color("white","Claim?: y/n ");
         echo color("white",".");
         sleep(1);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0508"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green"," Message: ".$message);
